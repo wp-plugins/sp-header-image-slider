@@ -1,5 +1,5 @@
 === SP Header image slider ===
-Contributors: SP Technolab, anoopranawat 
+Contributors: sptechnolab, anoopranawat 
 Tags: image slider, header image slider, captions, image slider with captions  banner slider, header banner slider, slideshow, custom post type, header image slideshow
 Requires at least: 3.1
 Tested up to: 3.7
