@@ -160,19 +160,19 @@ function sp_imageslider_shortcode( $atts, $content = null ) {
 				 
 				 <img src="<?php echo  plugin_dir_url( __FILE__ ); ?>/images/slide-1.jpg"  alt="" >
 				  <div class="caption" style="bottom:0; " >
-							<p style="margin:0px">hello</p>
+							<p style="margin:0px">First Slider Image</p>
 						</div>
 				 </div>		
 				  <div class="slide">
 	  <img src="<?php echo  plugin_dir_url( __FILE__ ); ?>/images/slide-2.jpg"  alt="">
 	   <div class="caption" style="bottom:0; " >
-							<p style="margin:0px">yes</p>
+							<p style="margin:0px">Second Slider Image</p>
 						</div>
 						</div>
 						  <div class="slide">
 	   <img src="<?php echo  plugin_dir_url( __FILE__ ); ?>/images/slide-3.jpg"  alt="">
 	    <div class="caption" style="bottom:0; " >
-							<p style="margin:0px">y</p>
+							<p style="margin:0px">Third Slider Image</p>
 						</div></div>
 				
 				
