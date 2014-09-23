@@ -126,13 +126,13 @@ function sp_imageslider_shortcode( $atts, $content = null ) {
 	if( $post_count > 0) :
 	?>
 	
-	<div id="slides">
+	<div id="slides-simple">
 			<div class="slides_container">
 	<?php
 		// Loop 
 		while ($query->have_posts()) : $query->the_post();
 		?>
-		 <div class="slide" style="width:<?php echo $sliderdefultwidth; ?>px; height:<?php echo $sliderdefultheight; ?>px;">
+		 <div class="slide" style="width:<?php echo $sliderdefultwidth; ?>px !important; height:<?php echo $sliderdefultheight; ?>px !important;">
 		
 		
 		 <a href="#" ><img src="<?php if (has_post_thumbnail( $post->ID ) ): ?>
@@ -153,24 +153,24 @@ function sp_imageslider_shortcode( $atts, $content = null ) {
 		
 <?php	else : ?>
 	
-		<div id="slides">
+		<div id="slides-simple">
 			<div class="slides_container">
 			
 				 <div class="slide">
 				 
-				 <a href="#" >  <img src="<?php echo  plugin_dir_url( __FILE__ ); ?>/images/slide-1.jpg"  alt=""></a>
+				 <img src="<?php echo  plugin_dir_url( __FILE__ ); ?>/images/slide-1.jpg"  alt="" >
 				  <div class="caption" style="bottom:0; " >
 							<p style="margin:0px">hello</p>
 						</div>
 				 </div>		
 				  <div class="slide">
-	  <a href="#" > <img src="<?php echo  plugin_dir_url( __FILE__ ); ?>/images/slide-2.jpg"  alt=""></a>
+	  <img src="<?php echo  plugin_dir_url( __FILE__ ); ?>/images/slide-2.jpg"  alt="">
 	   <div class="caption" style="bottom:0; " >
 							<p style="margin:0px">yes</p>
 						</div>
 						</div>
 						  <div class="slide">
-	   <a href="#" > <img src="<?php echo  plugin_dir_url( __FILE__ ); ?>/images/slide-3.jpg"  alt=""></a>
+	   <img src="<?php echo  plugin_dir_url( __FILE__ ); ?>/images/slide-3.jpg"  alt="">
 	    <div class="caption" style="bottom:0; " >
 							<p style="margin:0px">y</p>
 						</div></div>
@@ -228,7 +228,7 @@ function sp_imageslider_shortcode( $atts, $content = null ) {
 	?>
 	<script type="text/javascript">
 	 jQuery(function(){ 
-			jQuery('#slides').slides({
+			jQuery('#slides-simple').slides({
 				preload: true,
 				preloadImage: '<?php echo plugins_url( 'images/loading.gif' , __FILE__ ); ?>',
 				play: <?php echo $autoplaydefultspeed; ?>,
