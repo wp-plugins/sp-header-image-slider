@@ -22,8 +22,8 @@ To use this plugin just copy and past this code in to your header.php file or te
 You can also use this image slider inside your page with following shortcode <code>[sp_imageslider limit="-1"] </code>.
 
 = Installation help and support =
-* Please check installation help on our website. View [Installation help and support](http://wponlinesupport.com/plugin-installation-support/) 
-* Get Free installation and setup on your website.
+* Please check [installation help](http://wponlinesupport.com/plugin-installation-support/)  on our website. View [Installation help and support](http://wponlinesupport.com/plugin-installation-support/) 
+* Get [Free installation and setup](http://wponlinesupport.com/plugin-installation-support/)  on your website.
 
 = Features include: =
 * Php code for place image slider into your website header  <code><div class="headerslider"> <?php echo do_shortcode('[sp_imageslider limit="-1"]'); ?></div> </code>
